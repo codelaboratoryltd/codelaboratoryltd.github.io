@@ -1,8 +1,6 @@
 ---
+
 layout: default
-title: "Happy Jekylling!"
 ---
 
-## You're ready to go!
-
-Start developing your Jekyll website.
+<img src="{{ 'assets/images/coming-soon.png' | prepend: site.baseurl}}" class="splash"/>
