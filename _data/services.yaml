@@ -1,0 +1,21 @@
+-
+    - icon: design.png
+      text: design
+    - icon: develop.png
+      text: develop
+    - icon: deploy.png
+      text: deploy
+-
+    - icon: test.png
+      text: test
+    - icon: document.png
+      text: document
+    - icon: maintain.png
+      text: maintain
+-
+    - icon: remote.png
+      text: remote
+    - icon: migrate.png
+      text: migrate
+    - icon: consult.png
+      text: consult
