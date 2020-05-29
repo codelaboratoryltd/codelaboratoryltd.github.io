@@ -22,6 +22,7 @@ body {
 p {
   font-size: 14px;
   line-height: 1.75;
+  margin: 10px 30px;
 }
 
 p.large {
@@ -39,13 +40,14 @@ a.active {
 a {
   color: $primary-color;
 }
-
+/*
 a:hover,
 a:focus,
 a:active,
 a.active {
   color: $secondary-color;
 }
+*/
 
 h1,
 h2,
@@ -220,7 +222,7 @@ background-color: #fff;
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
   outline: 0;
-  color: $accent1-color;
+  /*color: $accent1-color;*/
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -322,6 +324,12 @@ section h3.section-subheading {
   font-weight: 400;
 }
 
+section p{
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 @media(min-width:768px) {
   section {
     padding: 150px 0;
@@ -340,6 +348,7 @@ aside.clients img {
 footer {
   padding: 25px 0;
   text-align: center;
+  min-width: 768px;
 }
 
 footer span.copyright {
@@ -370,7 +379,7 @@ ul.social-buttons li a {
   line-height: 40px;
   outline: 0;
   color: #fff;
-  background-color: #222;
+  background-color: $primary-color;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   transition: all .3s;
@@ -422,7 +431,6 @@ body {
   vertical-align: middle;
   display: inline-block;
 }
-
 
 .service-item {
   margin-bottom: 30px;
