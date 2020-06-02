@@ -1,14 +1,19 @@
+---
+
+permalink: /site.webmanifest
+
+---
 {
     "name": "Code Laboratory Ltd",
     "short_name": "Codelab",
     "icons": [
         {
-            "src": "/favicon/android-chrome-192x192.png",
+            "src": "{{ 'assets/favicon/android-chrome-192x192.png' | prepend: site.baseurl }}",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "/favicon/android-chrome-512x512.png",
+            "src": "{{ 'assets/favicon/android-chrome-512x512.png' | prepend: site.baseurl }}",
             "sizes": "512x512",
             "type": "image/png"
         }
