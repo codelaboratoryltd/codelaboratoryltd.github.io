@@ -3,11 +3,10 @@
 <head>
 {% include head.html %}
 </head>
-<body id="page-top" class="index">
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="80">
 {% include nav.html %}
 {% include header.html %}
-{% include sections.html %}
+{{ content }}
 {% include footer.html %}
-{% include script.html %}
 </body>
 </html>

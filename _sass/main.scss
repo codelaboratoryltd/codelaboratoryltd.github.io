@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   font-family: $primary-font;
   color: $primary-color;
+  position: relative;
 }
 
 .text-muted {
@@ -40,14 +41,6 @@ a.active {
 a {
   color: $primary-color;
 }
-/*
-a:hover,
-a:focus,
-a:active,
-a.active {
-  color: $secondary-color;
-}
-*/
 
 h1,
 h2,
@@ -121,95 +114,44 @@ background-color: $primary-color;
 background-color: #fff;
 }
 
-.btn-xl {
-  padding: 20px 40px;
-  border-color: $primary-color;
-border-radius: 3px;
-text-transform: uppercase;
-font-family: $primary-font;
-font-size: 18px;
-font-weight: 700;
-color: #fff;
-background-color: $primary-color;
-}
-
-.btn-xl:hover,
-.btn-xl:focus,
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-  border-color: $primary-color;
-  color: #fff;
-  background-color: $accent1-color;
-}
-
-.btn-xl:active,
-.btn-xl.active,
-.open .dropdown-toggle.btn-xl {
-  background-image: none;
-}
-
-.btn-xl.disabled,
-.btn-xl[disabled],
-fieldset[disabled] .btn-xl,
-.btn-xl.disabled:hover,
-.btn-xl[disabled]:hover,
-fieldset[disabled] .btn-xl:hover,
-.btn-xl.disabled:focus,
-.btn-xl[disabled]:focus,
-fieldset[disabled] .btn-xl:focus,
-.btn-xl.disabled:active,
-.btn-xl[disabled]:active,
-fieldset[disabled] .btn-xl:active,
-.btn-xl.disabled.active,
-.btn-xl[disabled].active,
-fieldset[disabled] .btn-xl.active {
-  border-color: $primary-color;
-background-color: $primary-color;
-}
-
-.btn-xl .badge {
-  color: $primary-color;
-background-color: #fff;
-}
-
 .navbar-default {
   border-color: transparent;
   background-color: $accent1-color;
-}
-
-.navbar-default .navbar-brand {
-  font-family: $primary-font;
-  color: $primary-color;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-  color: $secondary-color;
 }
 
 .navbar-default .navbar-collapse {
   border-color: rgba(255,255,255,.02);
 }
 
-.navbar-default .navbar-toggle {
+.navbar-default .navbar-toggler {
+  border-width: .2em;
   border-color: $primary-color;
+  padding: 0.25rem;
+  outline: 0;
+}
+
+.navbar-default .navbar-toggler .icon-bar {
+  display: block;
   background-color: $primary-color;
+  border-radius: 1px;
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
+.navbar-default.navbar-shrink .navbar-toggler {
+  border-color: $primary-color;
+  padding: 0.25rem;
 }
 
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
+.navbar-default.navbar-shrink  .navbar-toggler .icon-bar {
   background-color: $primary-color;
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
 }
 
-.navbar-default .nav li a {
-  text-transform: uppercase;
+.navbar-default .navbar-nav .nav-link {
   font-family: $primary-font;
   font-weight: 400;
   letter-spacing: 1px;
@@ -219,22 +161,19 @@ background-color: #fff;
   transition: all ease .35s;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .navbar-nav .nav-link.active {
+  color: $primary-color;
+}
+
+.navbar-default .navbar-nav .nav-link:hover,
+.navbar-default .navbar-nav .nav-link:focus {
   outline: 0;
-  /*color: $accent1-color;*/
-}
-
-.navbar-default .navbar-nav>.active>a {
-  border-radius: 0;
-  color: #fff;
-  background-color: $primary-color;
-}
-
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
   color: $accent1-color;
-  background-color: $primary-color;
+}
+.navbar-default.navbar-shrink .navbar-nav .nav-link:hover,
+.navbar-default.navbar-shrink .navbar-nav .nav-link:focus {
+
+  color: $primary-color;
 }
 
 .navbar-brand {
@@ -247,6 +186,22 @@ background-color: #fff;
 }
 
 @media(min-width:768px) {
+
+  .navbar-default .navbar-toggler {
+    border-color: $accent1-color;
+    border-width: .2em;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-default .navbar-toggler .icon-bar {
+    background-color: $accent1-color;
+    display: block;
+    width: 22px;
+    height: 4px;;
+    border-radius: 1px;
+    margin: 4px 0;
+  }
+
   .navbar-default {
     padding: 25px 0;
     border: 0;
@@ -269,8 +224,8 @@ background-color: #fff;
     background-repeat: no-repeat;
   }
 
-  .navbar-default .navbar-nav>.active>a {
-    border-radius: 3px;
+  .navbar-default  .navbar-nav .icon-bar {
+    background-color: $primary-color;
   }
 
   .navbar-default.navbar-shrink {
@@ -295,18 +250,18 @@ header {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  min-width: 768px;
+  width: 100vw;
+  height: 100vh;
 }
 
 header img {
-  padding-top: 200px;
-  padding-bottom: 150px;
+  height: 100%;
+  width: 100%;
 }
 
 
 section {
   padding: 100px 0;
-  min-width: 768px;
 }
 
 section h2.section-heading {
@@ -348,7 +303,6 @@ aside.clients img {
 footer {
   padding: 25px 0;
   text-align: center;
-  min-width: 768px;
 }
 
 footer span.copyright {
