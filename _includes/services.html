@@ -3,7 +3,10 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Services</h2>
-                <h3 class="section-subheading">Our Software Development Services</h3>
+                <p class="mb-5">
+                    Run your experiments in our lab. Let us create scalable software for your first venture into cloud technologies;
+                    your next IoT project or any crazy experiment. Your imagination is not the limit.
+                </p>
             </div>
         </div>
         <div class="row">
@@ -11,7 +14,8 @@
             {% for item in row %}
             <div class="col-md-4 col-sm-4 col-xs-4 service-item">
                 <div class="icon" style=" background-image: url('{{  "/assets/images/" | append: item.icon | prepend: site.baseurl }}');"></div>
-                <h6>{{ item.text}}</h6>
+                <h6 class="mt-2">{{ item.heading}}</h6>
+                <p>{{ item.body }}</p>
             </div>
             {% endfor %}
         {% endfor %}
