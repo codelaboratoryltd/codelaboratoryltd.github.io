@@ -1,21 +1,35 @@
 -
     - icon: design.png
-      text: design
+      heading: design
+      body: >
+        Let us break down your problem into easy to understand user stories, manage your backlog and drive your roadmap.
     - icon: develop.png
-      text: develop
+      heading: develop
+      body: >
+        Iterative development using agile methodologies provides multiple opportunities for the stakeholders
+        to engage in every step of the project, delivering software features frequently and predictably.
     - icon: deploy.png
-      text: deploy
+      heading: deploy
+      body: >
+        Continuous deployment using modern technologies to remove the "human factor" and enable your team to keep focus
+        on the product while improving productivity.
 -
     - icon: test.png
-      text: test
+      heading: test
+      body: Testing is fundimental to measuing success. We like to automate as much as possible.
     - icon: document.png
-      text: document
+      heading: document
+      body: Documentation should be simple to understand and fully comprehensive.
     - icon: maintain.png
-      text: maintain
+      heading: maintain
+      body: We believe software should be as maintence free as possible and when required easy to achieve with zero downtime.
 -
     - icon: remote.png
-      text: remote
+      heading: remote
+      body: We are a remote first company. We can work with you no matter where you are in the world.
     - icon: migrate.png
-      text: migrate
+      heading: migrate
+      body: Let us migrate you from on-premises solutions to modern cloud based technologies.
     - icon: consult.png
-      text: consult
+      heading: consult
+      body: Consult with us and see how we can help your business thrive.
