@@ -22,7 +22,7 @@
       body: Documentation should be simple to understand and fully comprehensive.
     - icon: maintain.png
       heading: maintain
-      body: We believe software should be as maintence free as possible and when required easy to achieve with zero downtime.
+      body: We believe software should be as maintenance free as possible and when required easy to achieve with zero downtime.
 -
     - icon: remote.png
       heading: remote
