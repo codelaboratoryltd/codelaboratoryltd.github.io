@@ -2,11 +2,8 @@
 
 layout: page
 heading: TERMS OF USE
-
+date:  02 June 2020
 ---
-
-Last updated 02 June 2020
-
 
 # AGREEMENT TO TERMS
 

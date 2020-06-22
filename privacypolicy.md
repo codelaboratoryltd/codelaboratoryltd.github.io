@@ -2,10 +2,8 @@
 
 layout: page
 heading: Privacy Policy
-
+date: 02 June 2020
 ---
-
-Last Updated 02 June 2020
 
 Your privacy is important to us. It is Code Laboratory Ltd's policy to respect your privacy regarding any information we 
 may collect from you across our website, [http://www.codelabratory.co.uk](http://www.codelabratory.co.uk), and other 
