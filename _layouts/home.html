@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+{% include head.html %}
+</head>
+<body id="page-top" class="index" data-spy="scroll" data-target=".navbar" data-offset="80">
+{% include nav.html %}
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>

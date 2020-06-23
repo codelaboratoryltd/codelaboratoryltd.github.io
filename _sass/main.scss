@@ -1,3 +1,470 @@
-.splash {
+
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+  overflow-x: hidden;
+  font-family: $primary-font;
+  color: $primary-color;
+  position: relative;
+}
+
+.text-muted {
+  color: $accent1-color;
+}
+
+.text-primary {
+  color: $primary-color;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 10px 30px;
+}
+
+p.large {
+  font-size: 16px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+  outline: 0;
+}
+
+a {
+  color: $primary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+}
+
+.img-centered {
+  margin: 0 auto;
+}
+
+.bg-light-gray {
+  background-color: #f7f7f7;
+}
+
+.bg-darkest-gray {
+  background-color: #222;
+}
+
+.btn-primary {
+  border-color: $primary-color;
+text-transform: uppercase;
+font-family: $primary-font;
+font-weight: 700;
+color: #fff;
+background-color: $primary-color;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  border-color: $primary-color;
+color: #fff;
+background-color: $secondary-color;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  border-color: $primary-color;
+background-color: $primary-color;
+}
+
+.btn-primary .badge {
+  color: $primary-color;
+background-color: #fff;
+}
+
+.navbar-default {
+  border-color: transparent;
+  background-color: $accent1-color;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: rgba(255,255,255,.02);
+}
+
+.navbar-default .navbar-toggler {
+  border-width: .2em;
+  border-color: $primary-color;
+  padding: 0.25rem;
+  outline: 0;
+}
+
+.navbar-default .navbar-toggler .icon-bar {
+  display: block;
+  background-color: $primary-color;
+  border-radius: 1px;
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
+}
+
+.navbar-default.navbar-shrink .navbar-toggler {
+  border-color: $primary-color;
+  padding: 0.25rem;
+}
+
+.navbar-default.navbar-shrink  .navbar-toggler .icon-bar {
+  background-color: $primary-color;
+  width: 20px;
+  height: 3px;
+  margin: 3px 0;
+}
+
+.navbar-default .navbar-nav .nav-link {
+  font-family: $primary-font;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #fff;
+  -webkit-transition: all ease .35s;
+  -moz-transition: all ease .35s;
+  transition: all ease .35s;
+}
+
+.navbar-default .navbar-nav .nav-link.active {
+  color: $primary-color;
+}
+
+.navbar-default .navbar-nav .nav-link:hover,
+.navbar-default .navbar-nav .nav-link:focus {
+  outline: 0;
+  color: $accent1-color;
+}
+.navbar-default.navbar-shrink .navbar-nav .nav-link:hover,
+.navbar-default.navbar-shrink .navbar-nav .nav-link:focus {
+
+  color: $primary-color;
+}
+
+.navbar-brand {
+  background-image: url("../images/inverse-transparent.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 0 20px 0;
+  margin: 15px 10px;
+  height: 30px;
+}
+
+@media(min-width:768px) {
+
+  .navbar-default .navbar-toggler {
+    border-color: $accent1-color;
+    border-width: .2em;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .navbar-default .navbar-toggler .icon-bar {
+    background-color: $accent1-color;
+    display: block;
+    width: 22px;
+    height: 4px;;
+    border-radius: 1px;
+    margin: 4px 0;
+  }
+
+  .navbar-default {
+    padding: 25px 0;
+    border: 0;
+    background-color: transparent;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+  }
+
+  .navbar-default .navbar-brand {
+    font-size: 2em;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+    background-image: url("../images/transparent.png");
+    width:2em;
+    height: 2em;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .navbar-default  .navbar-nav .icon-bar {
+    background-color: $primary-color;
+  }
+
+  .navbar-default.navbar-shrink {
+    padding: 10px 0;
+    background-color: $accent1-color;
+  }
+
+  .navbar-default.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+    background-image: url("../images/inverse-transparent.png");
+  }
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  background-attachment: scroll;
+  background-color: $primary-color;
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+header img {
+  height: 100%;
   width: 100%;
+}
+
+
+section {
+  padding: 100px 0;
+}
+
+section h2.section-heading {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 2.2rem;
+}
+
+section h3.section-subheading {
+  text-transform: none;
+  font-family: $secondary-font;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+section p{
+  font-family: $secondary-font;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none;
+}
+
+aside.clients img {
+  margin: 50px auto;
+}
+
+footer {
+  padding: 25px 0;
+  text-align: center;
+}
+
+footer span.copyright {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  line-height: 40px;
+}
+
+footer ul.quicklinks {
+  margin-bottom: 0;
+  text-transform: none;
+  font-family: $primary-font;
+  line-height: 40px;
+}
+
+ul.social-buttons {
+  margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 20px;
+  line-height: 40px;
+  outline: 0;
+  color: #fff;
+  background-color: $primary-color;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+  background-color: $primary-color;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+  outline: 0;
+}
+
+::-moz-selection {
+  text-shadow: none;
+  background: $primary-color;
+}
+
+::selection {
+  text-shadow: none;
+  background: $primary-color;
+}
+
+img::selection {
+  background: 0 0;
+}
+
+img::-moz-selection {
+  background: 0 0;
+}
+
+body {
+  webkit-tap-highlight-color: $primary-color;
+}
+
+#services .icon{
+  background-color: $primary-color;
+  background-blend-mode: overlay;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.service-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.service-item p{
+  font-size: 0.9rem;
+}
+
+section#contact {
+  background-color: $accent1-color;
+  background-image: url('../images/contact.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact .section-subheading {
+  color: #fff;
+}
+
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 236px;
+}
+
+section#contact .form-control:focus {
+  border-color: $primary-color;
+  box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-family: $primary-font;
+  font-weight: 700;
+  color: #bbb;
+}
+
+section#contact .text-danger {
+  color: #e74c3c;
+}
+
+.form-control {
+   background-color: $accent1-color;
+}
+
+.grecaptcha-badge {
+  display: none;
 }

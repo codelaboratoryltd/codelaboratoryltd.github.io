@@ -1,1 +1,25 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{% if page.title %}{{ page.title | capitalize_all }}{% else %}{{ site.title | capitalize_all }}{% endif %}</title>
+<meta name="viewport" content="width=device-width">
+
 <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+{% if jekyll.environment == 'production' and site.google_analytics %}
+{% include analytics.html %}
+{% endif %}
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ 'assets/favicon/apple-touch-icon.png' | prepend: site.baseurl }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ 'assets/favicon/favicon-32x32.png' | prepend: site.baseurl }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ 'assets/favicon/favicon-16x16.png' | prepend: site.baseurl }}">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/jquery.easing.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/popper.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/agency.js" | prepend: site.baseurl }}"></script>
