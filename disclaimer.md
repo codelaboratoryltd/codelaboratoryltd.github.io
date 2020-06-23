@@ -2,11 +2,8 @@
 
 layout: page
 heading: DISCLAIMER
-
+date: 2 June 2020
 ---
-
-Last updated 2 June 2020
-
 
 # WEBSITE DISCLAIMER
 
