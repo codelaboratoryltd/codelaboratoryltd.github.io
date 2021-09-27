@@ -28,7 +28,32 @@ Slack is a software similar to GitHub in the fact that it is used within an orga
 
 ##golang
 golang is a type of programming language that is used by many types of developers for creating the software as it is a much easier and smoother language to use than some other available languages not only this, but it also has a much faster run and compile time when compared to other similar types of languages. it is also a lot easier to learn to use than other available languages making it a great choice for someone who is just starting out in this industry. the installation for goland is fairly simple it is downloaded off of chrome and the file is then opened up and installed onto the machine in the case of a MAC it is dragged into the application's folder. once the program is open and running you can link it to your GitHub account as this allows the programmer to access the different URLs they are currently working on whilst inside the goland window allowing a much more convenient method of opening and finding required files.[goland](https://www.jetbrains.com/go/promo/?source=google&medium=cpc&campaign=10165081599&gclid=CjwKCAjwy7CKBhBMEiwA0Eb7ajtsjeN8VB1aZAl00Xbf3ypifKKEil0FfV_MOqd8Xy_x1gWWpnQNmBoCiesQAvD_BwE) a good website to learn the basics of goland is [tutorial](https://www.w3schools.com/go/index.php) as it offers a well explained tutorial as well as opportunities to test out the different functions and factors explained throughout as well as small exercises to help you learn by doing practical and theoretical training.
-(![img_4.png](img_4.png)
+(![img_4.png](img_4.png) 
 
+##Overview of  a ssh key 
+A ssh key is a pair of files one that is private and one that is public that are used as a type of password to gain access to important files, because of this it is very important to generate and store a ssh key when working on any project.It is also needed to be attached to your GitHub account as without it, you will not be able to create repositories or use push or pull requests as it will not know where the commands are coming from, this is because a ssh key is not just a password but also acts as a form o id for the machine it was generated from.
 
+###generating a ssh key 
+To generate a ssh key a terminal is used on the machine you are using so the first step is to open up iterm2 and in the command line you will use the code: ssh-keygen -t rsa. Once this command has been run it will ask you where you would like to store the key as well as a passphrase to name it however if you leave them blank by just pressing the enter key then it will use the default locations for your machine. If the command has been successful it will create a pair of files one being the public key and one being the private key. the terminal will look something like this,Your identification has been saved in /Users/myname/.ssh/id_rsa.
+
+Your public key has been saved in /Users/myname/.ssh/id_rsa.pub.
+The key fingerprint is:
+ae:89:72:0b:85:da:5a:f4:7c:1f:c2:43:fd:c6:44:38 myname@mymac.local
+The key's randomart image is:
++--[ RSA 2048]----+
+|                 |
+|         .       |
+|        E .      |
+|   .   . o       |
+|  o . . S .      |
+| + + o . +       |
+|. + o = o +      |
+| o...o * o       |
+|.  oo.o .        |
++-----------------+
+
+After this has been done the private key will be stored in the id_rsa file in the .ssh directory and will be used to verify the public key that is used by the same computer. however, the public ke will be stored in a different location this will be found in the id_rsa.pub file and is used as the key that you will be uploading to your GitHub account.
+
+###uploading key to GitHub
+The first step of this process is to copy the generated key onto your clipboard,you will need to open up GitHub and then access the account section of the settings, from here you will need to find the SSH and GPG key section and then click onto new SSH key at this point you will paste the copied key into this section this will add the key onto your account and save it for future work.[add ssh key](https://github.com/settings/keys)
 
